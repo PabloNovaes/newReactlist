@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins';
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: url(../assets/img/wallpaper.jpg) no-repeat center/cover;
+}
