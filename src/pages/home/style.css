@@ -7,17 +7,18 @@ h1{
     flex-direction: column;
     justify-content: center;
 
-    width: 95vw;
+    width: 92vw;
     max-width: 700px;
     padding-top: 1rem;
     border-radius: 1rem;
     padding: 1rem;
-
-    border: solid 1px #dbdbdb8a;
+    
     background-color: #ffffff2f;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(12.5px);
+    border-radius: 25px;
     box-shadow: 0 0 25px #252525;
 }
+
 
 .container header{
     color: #e6e6e6;
@@ -29,7 +30,8 @@ h1{
 }
 
 .container header img{
-    width: 100px;
+    max-width: 100px;
+    /* width: 100%; */
     border-radius: 50%;
     margin-left: 7px;
 }
@@ -37,6 +39,9 @@ h1{
 .container header div{
     display: flex;
     align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    row-gap: 1rem;
 }
 
 .container input{
@@ -59,7 +64,7 @@ h1{
     padding: 24px;
 
     font-weight: 700;
-    background-color: rgb(243, 13, 13);;
+    background-color: #5885DD;
     color: #fff;
 
     border-radius: 5px;
@@ -81,21 +86,23 @@ h1{
     flex-direction: column;
     
     border-radius: 10px;
-    border: solid 1px #dbdbdb3f;
+    border: solid 1px #ffffff48;
     padding: 5px 5px;
     margin-bottom: 20px;
     row-gap: 15px;
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.002);
+    backdrop-filter: blur(12.5px);
 
     overflow-y: scroll;
 }
 
 .list::-webkit-scrollbar{
     background-color: transparent;
-    border-radius: 1rem;
+    width: .6rem;
 }
-.list::-webkit-scrollbar-track{
-    color: #343434;
+.list::-webkit-scrollbar-thumb{
+    background-color: #5885DD;
+    border-radius: 999px;
 }
 
 .container header div strong{
@@ -103,7 +110,7 @@ h1{
 }
 
 
-@media(max-width: 500px){
+@media(max-width: 400px){
     .container header div{
         flex-direction: column-reverse;
     }
